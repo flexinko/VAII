@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <!-- AI (Claude): viewport – mobil vykreslí stránku v skutočnej šírke zariadenia, bez neho nefungujú media queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Knižnica - FS Drienovec</title>
+    <!-- Písma Amatic SC a Nunito. Zdroj: fonts.google.com -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Nunito:wght@400;700&display=swap">
+    <!-- AI (Claude): relatívna cesta (bez lomky na začiatku), aby CSS fungovalo aj pri otvorení dvojklikom (file://) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- AI (Claude): obsah hlavičky, main a päty podľa Wireframu 1 (verejná varianta hlavičky) -->
+<header class="site-header">
+    <!-- logo + názov sú jeden odkaz na úvod; alt je prázdny, lebo názov je hneď vedľa ako text -->
+    <a class="brand" href="index.html">
+        <img src="img/logo.svg" alt="" width="48" height="48">
+        <span>FS Drienovec</span>
+    </a>
+
+    <span class="badge">Portál člena</span>
+
+    <nav aria-label="Hlavná navigácia">
+        <ul>
+            <li><a href="#">Nástenka</a></li>
+            <li><a href="#">Kalendár</a></li>
+            <li><a href="kniznica.html" aria-current="page">Knižnica</a></li>
+        </ul>
+    </nav>
+
+    <!-- odkazy (a), nie tlačidlá (button): vedú na inú stránku, nevykonávajú akciu -->
+    <a class="user" href="#">Jakub Lech</a>
+</header>
+
+<div class="lem" aria-hidden="true"></div>
+
+<main class="page">
+    <h1>Knižnica</h1>
+    <p>15 choreografií · hudba aj tanec na jednom mieste</p>
+    <form class="filters">
+        <input type="search" placeholder="Hľadaj choreografiu alebo súbor…" aria-label="Hľadať">
+
+        <select aria-label="Región">
+            <option>Región: všetky</option>
+            <option>Horné Ponitrie</option>
+            <option>Trenčianske</option>
+            <option>Liptov</option>
+        </select>
+
+        <select aria-label="Zoradenie">
+            <option>Najnovšie</option>
+            <option>Podľa názvu</option>
+        </select>
+
+        <div class="toggle">
+            <span>Zobraziť:</span>
+            <button type="button" class="active">Všetko</button>
+            <button type="button">Hudba</button>
+            <button type="button">Tanec</button>
+        </div>
+    </form>
+
+    <div class="cards">
+        <article class="card">
+            <header class="card-header">
+                <h2>Padajú oriešky</h2>
+                <span class="region">Horné Ponitrie</span>
+            </header>
+            <p class="card-meta">5 súborov · 3 hudba · 2 tanec</p>
+
+            <h3>Hudba</h3>
+            <ul class="materials">
+                <li>
+                    <span class="file-type">PDF</span>
+                    <span class="file-name">Noty – 1. husle</span>
+                    <a href="#" download aria-label="Stiahnuť">↓</a>
+                </li>
+                <li>
+                    <span class="file-type">MP3</span>
+                    <span class="file-name">Nahrávka – celé číslo</span>
+                    <a href="#" download aria-label="Stiahnuť">↓</a>
+                </li>
+            </ul>
+
+            <h3>Tanec</h3>
+            <ul class="materials">
+                <li>
+                    <span class="file-type">MP4</span>
+                    <span class="file-name">Video – celá choreografia</span>
+                    <a href="#" download aria-label="Stiahnuť">↓</a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <header class="card-header">
+                <h2>Chleba napiecť</h2>
+                <span class="region">Horné Ponitrie</span>
+            </header>
+            <p class="card-meta">5 súborov · 3 hudba · 2 tanec</p>
+
+            <h3>Hudba</h3>
+            <ul class="materials">
+                <li>
+                    <span class="file-type">PDF</span>
+                    <span class="file-name">Noty – 1. husle</span>
+                    <a href="#" download aria-label="Stiahnuť">↓</a>
+                </li>
+                <li>
+                    <span class="file-type">MP3</span>
+                    <span class="file-name">Nahrávka – celé číslo</span>
+                    <a href="#" download aria-label="Stiahnuť">↓</a>
+                </li>
+            </ul>
+
+            <h3>Tanec</h3>
+            <ul class="materials">
+                <li>
+                    <span class="file-type">MP4</span>
+                    <span class="file-name">Video – celá choreografia</span>
+                    <a href="#" download aria-label="Stiahnuť">↓</a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <header class="card-header">
+                <h2>Drapky</h2>
+                <span class="region">Horné Ponitrie</span>
+            </header>
+            <p class="card-meta">5 súborov · 3 hudba · 2 tanec</p>
+
+            <h3>Hudba</h3>
+            <ul class="materials">
+                <li>
+                    <span class="file-type">PDF</span>
+                    <span class="file-name">Noty – 1. husle</span>
+                    <a href="#" download aria-label="Stiahnuť">↓</a>
+                </li>
+                <li>
+                    <span class="file-type">MP3</span>
+                    <span class="file-name">Nahrávka – celé číslo</span>
+                    <a href="#" download aria-label="Stiahnuť">↓</a>
+                </li>
+            </ul>
+
+            <h3>Tanec</h3>
+            <ul class="materials">
+                <li>
+                    <span class="file-type">MP4</span>
+                    <span class="file-name">Video – celá choreografia</span>
+                    <a href="#" download aria-label="Stiahnuť">↓</a>
+                </li>
+            </ul>
+        </article>
+    </div>
+</main>
+<div class="lem" aria-hidden="true"></div>
+<footer class="site-footer">
+    <div>
+        <p class="footer-name">FS Drienovec</p>
+    </div>
+
+    <div>
+        <h2>Kontakt</h2>
+        <!-- address = kontaktné údaje vlastníka stránky -->
+        <address>
+            <a href="mailto:kontakt@example.com">kontakt@example.com</a><br>
+            Bánovce nad Bebravou
+        </address>
+    </div>
+
+    <div>
+        <h2>Sledujte nás</h2>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+<!-- AI (Claude): koniec doplneného kódu -->
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <!-- AI (Claude): viewport – mobil vykreslí stránku v skutočnej šírke zariadenia, bez neho nefungujú media queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FS Drienovec</title>
+    <!-- Písma Amatic SC a Nunito. Zdroj: fonts.google.com -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Nunito:wght@400;700&display=swap">
+    <!-- AI (Claude): relatívna cesta (bez lomky na začiatku), aby CSS fungovalo aj pri otvorení dvojklikom (file://) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="public">
+<!-- AI (Claude): obsah hlavičky, main a päty podľa Wireframu 1 (verejná varianta hlavičky) -->
+<header class="site-header">
+    <!-- logo + názov sú jeden odkaz na úvod; alt je prázdny, lebo názov je hneď vedľa ako text -->
+    <a class="brand" href="index.html">
+        <img src="img/logo.svg" alt="" width="48" height="48">
+        <span>FS Drienovec</span>
+    </a>
+
+    <nav aria-label="Hlavná navigácia">
+        <ul>
+            <li><a href="index.html" aria-current="page">Úvod</a></li>
+            <li><a href="#">Repertoár</a></li>
+            <li><a href="#">Vystúpenia</a></li>
+            <li><a href="#">O súbore</a></li>
+        </ul>
+    </nav>
+
+    <!-- odkazy (a), nie tlačidlá (button): vedú na inú stránku, nevykonávajú akciu -->
+    <div class="header-actions">
+        <a class="btn btn-outline" href="#">Prihlásiť sa</a>
+        <a class="btn btn-primary" href="#">Pridaj sa k nám</a>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Folklórny súbor Drienovec</h1>
+        <p>Priatelia ľudových tradícií</p>
+        <div class="hero-actions">
+            <!-- AI (Claude): tlačidlá úvodného bloku, používajú existujúce triedy btn, btn-primary, btn-outline -->
+            <a class="btn btn-primary" href="#">Najbližšie vystúpenia</a>
+            <a class="btn btn-outline" href="#">Náš repertoár</a>
+        </div>
+        <div class="lem" aria-hidden="true"></div>
+    </section>
+</main>
+
+<div class="lem" aria-hidden="true"></div>
+
+<footer class="site-footer">
+    <div>
+        <p class="footer-name">FS Drienovec</p>
+    </div>
+
+    <div>
+        <h2>Kontakt</h2>
+        <!-- address = kontaktné údaje vlastníka stránky -->
+        <address>
+            <a href="mailto:kontakt@example.com">kontakt@example.com</a><br>
+            Bánovce nad Bebravou
+        </address>
+    </div>
+
+    <div>
+        <h2>Sledujte nás</h2>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+<!-- AI (Claude): koniec doplneného kódu -->
+</body>
+</html>
